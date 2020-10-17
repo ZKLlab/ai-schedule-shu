@@ -76,7 +76,7 @@ function _tryGetIndexes(tr: Cheerio): number[] | undefined {
       colContents.push($(element).text().trim());
     }
   });
-  const indexes = ['课程名称', '教师姓名', '上课时间', '上课教室', '上课日期'].map(value => colContents.indexOf(value));
+  const indexes = ['课程名称', '教师姓名', '上课时间', '上课地点', '上课日期'].map(value => colContents.indexOf(value));
   if (Math.min(...indexes.slice(0, -1)) >= 0) {
     return indexes;
   }

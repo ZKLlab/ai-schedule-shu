@@ -32,7 +32,7 @@ function _tryGetIndexes(tr) {
             colContents.push($(element).text().trim());
         }
     });
-    var indexes = ['课程名称', '教师姓名', '上课时间', '上课教室', '上课日期'].map(function (value) { return colContents.indexOf(value); });
+    var indexes = ['课程名称', '教师姓名', '上课时间', '上课地点', '上课日期'].map(function (value) { return colContents.indexOf(value); });
     if (Math.min.apply(Math, indexes.slice(0, -1)) >= 0) {
         return indexes;
     }

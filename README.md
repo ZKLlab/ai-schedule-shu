@@ -22,4 +22,3 @@ SHU排课助手 - [https://github.com/shuosc/shu-scheduling-helper](https://gith
 ## 许可证
 
 MIT
-

@@ -4,8 +4,8 @@
  * @return {string}
  */
 function scheduleHtmlProvider() {
-    if (location.host !== 'xk.autoisp.shu.edu.cn:8084') {
-        throw new Error('当前不在xk.autoisp.shu.edu.cn:8084域内');
+    if (location.host !== 'xk.autoisp.shu.edu.cn') {
+        throw new Error('当前不在xk.autoisp.shu.edu.cn域内');
     }
     return _desensitization(_getContainerElement()).innerHTML;
 }
